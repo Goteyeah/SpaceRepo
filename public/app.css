@@ -1,0 +1,86 @@
+
+/* body {
+    background-image: url("./Background.png");
+    color:white;
+}
+
+*/
+header {
+    display: flex;
+    justify-content: flex-end ;
+    z-index: 1;
+    margin: 10px;
+    
+}
+.espace{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+.basgauche{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: flex-end; 
+    height: 100vh; 
+}
+
+.boutonRond {
+    color: black;
+    border-radius: 100%;
+    background-color: white;
+    padding: 20px;
+    }
+
+
+   /* .bouton{
+       background-image: url("./Background.png");
+        
+        z-index: -2;
+        filter: blur(5px);
+        position: absolute;
+        top: 115px;
+        right: 211px;
+        padding: 10px;
+        width: 75vh;
+        height: 25px;
+        overflow: hidden;
+        text-align: center;
+    }
+*/
+    .conteneurImage {
+        position: relative;
+        display: inline-block;
+        
+    }
+
+    .imageFloue{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .carreFlou {
+        position: absolute;
+        top: 200px;
+        left: 700px;
+        width: 500px;
+        height: 200px;
+        background: inherit;
+       clip-path: polygon(0 0,100% 0,100% 100%, 0% 100%);
+        filter: blur(5px);
+        
+    }
+
+
+
+    .espaceBlur {
+        content: "";
+        width: 200px;
+        height: 200px;
+        filter: blur(21px);
+        top: 20px;
+        left: 20px;
+    }
+
+  
