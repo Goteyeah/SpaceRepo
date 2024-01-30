@@ -1,0 +1,56 @@
+
+body {
+    background-image: url("./lezard.JPG") ;
+    color: white;
+   
+}
+
+.flouImage {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    
+}
+
+header {
+    display: flex;
+    justify-content: flex-end ;
+    z-index: 1;
+    margin: 10px;
+    
+}
+.espace{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+.basgauche{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: flex-end; 
+    height: 100vh; 
+}
+
+.boutonRond {
+    color: black;
+    border-radius: 100%;
+    background-color: white;
+    padding: 20px;
+    }
+
+    
+
+    .bouton{
+        background-color: aliceblue;
+        opacity: 0.5;
+         z-index: -2;
+        filter: blur(5px);
+        position: absolute;
+        top: 11px;
+        right: 2px;
+        padding: 30px;
+       text-align: center;
+    }
+
+  

@@ -1,15 +1,16 @@
 
-/* body {
+ body {
     background-image: url("./Background.png");
     color:white;
+    margin: 50px;
 }
 
-*/
+
 header {
     display: flex;
     justify-content: flex-end ;
     z-index: 1;
-    margin: 10px;
+    margin: 100px;
     
 }
 .espace{
@@ -22,7 +23,7 @@ header {
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-end; 
-    height: 100vh; 
+    height: 70vh; 
 }
 
 .boutonRond {
@@ -62,15 +63,16 @@ header {
 
     .carreFlou {
         position: absolute;
-        top: 200px;
-        left: 700px;
+        top: -200px;
+        left: 1300px;
         width: 500px;
         height: 200px;
         background: inherit;
        clip-path: polygon(0 0,100% 0,100% 100%, 0% 100%);
         filter: blur(5px);
+        z-index: -1;
         
-    }
+       }
 
 
 
