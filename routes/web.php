@@ -21,3 +21,7 @@ Route::get('/indexSpace',function(){
     return view('indexSpace');
 });
 
+Route::get('/planets', function(){
+    return view('planets');
+});
+

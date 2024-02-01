@@ -1,17 +1,67 @@
 
- body {
-    background-image: url("./Background.png");
+.menuBoutton{
+    font-family: 'barlow';
+}
+
+menuBoutton::before{
+    font-family: ;
+}
+
+@font-face {
+    font-family: 'bellefair';
+    src: url('./Fonts/Bellefair-Regular.ttf') format('truetype');
+ 
+}
+@font-face {
+    font-family: 'barlow';
+    src: url('./Fonts/Barlow-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'barlowC';
+    src: url('./Fonts/Barlow-Bold.ttf') format('truetype');
+}
+
+
+.fontA {
+    font-family: 'bellefair';
+    font-size: 80px;
+}
+.fontB{
+    font-family: 'barlow';
+    font-size: 20px;
+}
+
+.fontC {
+    font-family: 'barlowC';
+    font-size: 25px;
+   
+}
+.fondEtoiles {
+    background-image: url('./assetPlanet/fondEtoiles.png');
+    background-size: 100%;
+background-color: black;
     color:white;
-    margin: 50px;
+    padding: 50px;
+}
+ .fondAcceuil {
+    background-image: url("./Background.png");
+    background-size: 100%;
+    color:white;
+    padding: 50px;
 }
 
 
 header {
+    background-image: url("./Rectangle.png");
     display: flex;
     justify-content: flex-end ;
-    z-index: 1;
     margin: 100px;
-    
+           
+}
+
+.traitMenu {
+    width: 170vh;
 }
 .espace{
         display: flex;
@@ -21,68 +71,25 @@ header {
 .basgauche{
     display: flex;
     flex-direction: column; 
-    align-items: flex-start;
-    justify-content: flex-end; 
-    height: 70vh; 
+    justify-content: center; 
+    height: 80vh; 
 }
 
-.boutonRond {
-    color: black;
-    border-radius: 100%;
-    background-color: white;
-    padding: 20px;
+.ellipse {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 35vh;
+    justify-content: center; 
+    height: 80vh; 
     }
 
-
-   /* .bouton{
-       background-image: url("./Background.png");
-        
-        z-index: -2;
-        filter: blur(5px);
-        position: absolute;
-        top: 115px;
-        right: 211px;
-        padding: 10px;
-        width: 75vh;
-        height: 25px;
-        overflow: hidden;
-        text-align: center;
-    }
-*/
-    .conteneurImage {
+.conteneurImage {
         position: relative;
         display: inline-block;
         
     }
 
-    .imageFloue{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .carreFlou {
-        position: absolute;
-        top: -200px;
-        left: 1300px;
-        width: 500px;
-        height: 200px;
-        background: inherit;
-       clip-path: polygon(0 0,100% 0,100% 100%, 0% 100%);
-        filter: blur(5px);
-        z-index: -1;
-        
-       }
-
-
-
-    .espaceBlur {
-        content: "";
-        width: 200px;
-        height: 200px;
-        filter: blur(21px);
-        top: 20px;
-        left: 20px;
-    }
-
   
+
+
+
