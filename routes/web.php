@@ -25,3 +25,6 @@ Route::get('/planets', function(){
     return view('planets');
 });
 
+Route::get('/crew', function(){
+    return view('crew');
+});
