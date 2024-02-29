@@ -13,4 +13,10 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function test_GA(): void 
+    {
+        $response = $this->get('/');
+        $response->assertViewHas('message','vous y êtes!');
+    }
 }

@@ -10,10 +10,28 @@ class ExampleTest extends TestCase
     /**
      * A basic test example.
      */
-    public function test_the_application_returns_a_successful_response(): void
+    public function testBasicTest(): void
     {
-        $response = $this->get('/');
+        $data = [10,20,30];
+        $result = array_sum($data);
+        $this->assertEquals(60, $result);
 
-        $response->assertStatus(200);
+      
     }
+
+    public function testTest(): void
+    {   $data = 'Je suis petit';
+        $this->assertTrue(str()->startsWith($data, 'Je'));
+        $this->assertFalse(str()->startsWith($data, 'Tu'));
+        $this->assertSame(str()->startsWith($data, 'Tu'), false);
+        $this->assertStringStartsWith('Je', $data);
+        $this->assertStringEndsWith('petit', $data);
+    }
+
+    
+
+  
+
+    
+
 }
