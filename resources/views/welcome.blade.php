@@ -20,7 +20,7 @@
         <div class="BouttonDuMenu">
         <a href="{{route('welcome')}}">00 ACCUEIL</a>
         <a  href="{{route('planets')}}">01 DESTINATION</a>
-        <a  href="https://www.google.fr">02 EQUIPAGE</a>
+        <a  href="{{route('planets')}}">02 EQUIPAGE</a>
         <a  href="{{route('techno')}}">03 TECHNOLOGIE</a>
         <a href="{{route('language',['locale'=>'fr'])}}">FR</a>
         <a href="{{route('language',['locale'=>'en'])}}">EN</a>

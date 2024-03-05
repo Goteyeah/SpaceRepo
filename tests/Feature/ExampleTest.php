@@ -28,10 +28,4 @@ class ExampleTest extends TestCase
         $this->assertStringEndsWith('petit', $data);
     }
 
-    
-
-  
-
-    
-
 }

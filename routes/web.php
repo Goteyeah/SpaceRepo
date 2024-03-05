@@ -31,13 +31,10 @@ Route::get('/language/{locale}', [LanguageController::class,'setLanguage'])->nam
 
 Route::get('welcome', [testUnitaireGA::class, 'index']);
 
-Route::get('/', function(){
-    return view('welcome')->with('message','vous y etes!');
-});
+Route::get('contact', [PageController::class,'contact']);
 
- 
-
+/*
 Route::get('contact', [ContactsController::class, 'create'])->name('contact.create');
 Route::post('contact', [ContactsController::class, 'store'])->name('contact.store');
-
+*/;
 

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class testYoupi extends Model
+class planetes_name extends Model
 {
     use HasFactory;
 }
